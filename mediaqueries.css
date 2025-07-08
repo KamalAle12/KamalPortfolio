@@ -1,4 +1,9 @@
 @media screen and (min-width: 1401px) {
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
   .section-container,
   .about-containers,
   .experience-details-container,
@@ -9,18 +14,10 @@
     padding: 0 2rem;
   }
 
-  #profile,
-  #about,
-  #experience,
-  #projects,
-  #achievements,
-  #contact {
-    padding: 2rem 0;
-  }
-
   .text-container {
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
   }
 
   .section_text_p1,
@@ -28,9 +25,16 @@
   .title {
     text-align: center;
   }
+
+  .section_pic-container {
+    max-width: 300px;
+    height: auto;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
 }
-
-
 
 @media screen and (max-width: 1400px) {
     #profile {
