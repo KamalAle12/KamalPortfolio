@@ -1,20 +1,19 @@
-@media screen and (min-width: 1401px) {
-  .experience-details-container,
-  .about-containers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* center content */
-    max-width: 1200px; /* prevent stretching too wide */
-    margin: 0 auto;    /* center container */
-    gap: 20px;         /* spacing between items */
+@media screen and (min-width: 1400px) {
+  #projects .experience-details-container,
+  #projects .about-containers {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 20px;
   }
 
-  .details-container {
-    flex: 1 1 30%;    /* 3 items per row approx */
-    max-width: 350px; /* max size of each card */
+  #projects .details-container {
+    max-width: 350px;
     box-sizing: border-box;
   }
 }
+
 
 @media screen and (max-width: 1400px) {
     #profile {
