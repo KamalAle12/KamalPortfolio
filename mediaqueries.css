@@ -1,19 +1,44 @@
-@media screen and (min-width: 1400px) {
-  #projects .experience-details-container,
-  #projects .about-containers {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+@media screen and (min-width: 1401px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 1400px;
     margin: 0 auto;
     gap: 20px;
   }
 
-  #projects .details-container {
+  .experience-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .details-container {
+    flex: 1 1 30%;
     max-width: 350px;
     box-sizing: border-box;
   }
-}
 
+  #projects,
+  #contact {
+    height: fit-content;
+  }
+
+  /* Optional: limit section width to avoid ultra-wide stretch */
+  section {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 1400px) {
     #profile {
