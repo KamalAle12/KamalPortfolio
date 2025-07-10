@@ -150,12 +150,14 @@ a:hover {
 /*SECTION */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4vh 2rem; /* padding for breathing room */
+  box-sizing: border-box;
+  min-height: fit-content;
+  height: auto; /* avoid fixed height */
 }
+
 
 .section-container {
     display: flex;
